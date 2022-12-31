@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pyrino
+Version: 1.2
+Summary: Repository of pyrino | An asynchronous, powerful and optimized library for Rubino
+Home-page: https://github.com/shayanheidari01/rubino
+Author: Shayan Heidari
+Author-email: snipe4kill@yahoo.com
+Keywords: rubika,rubpy,rubikaio,chat,bot,robot,asyncio
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Topic :: Internet
+Classifier: Topic :: Communications
+Classifier: Topic :: Communications :: Chat
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Requires-Python: ~=3.7
+Description-Content-Type: text/markdown

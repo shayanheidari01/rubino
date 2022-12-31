@@ -34,9 +34,13 @@ class HTTPRequests:
             try:
                 url: makeURL = await makeURL(url=url)
                 response = await self.http.request(b'GET', url, headers=headers)
-                return response
+                if response.status == 200:
+                    return response
+                else:
+                    continue
             except RemoteProtocolError:
                 self.http = AsyncConnectionPool(http2=True)
+                continue
 
     async def post(self,
         url: Optional[bytes] = None,
@@ -57,3 +61,17 @@ class HTTPRequests:
                 return response
             except RemoteProtocolError:
                 self.http = AsyncConnectionPool(http2=True)
+                continue
+
+    async def postData(self, url: str, data: bytes, headers: dict) -> Response:
+        while 1:
+            try:
+                url: makeURL = await makeURL(url=url)
+                response = await self.http.request(b'POST', url=url, content=data, headers=headers)
+                if response.status != 200:
+                    continue
+                else:
+                    return response
+            except RemoteProtocolError:
+                self.http = AsyncConnectionPool(http2=True)
+                continue

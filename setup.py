@@ -8,7 +8,7 @@ requirements = ['wheel', 'httpcore']
 
 setup(
     name = 'pyrino',
-    version = '1.1',
+    version = '1.2',
     author = 'Shayan Heidari',
     author_email = 'snipe4kill@yahoo.com',
     description = 'Repository of pyrino | An asynchronous, powerful and optimized library for Rubino',
